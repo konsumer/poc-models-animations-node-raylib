@@ -7,10 +7,10 @@ function main () {
   r.SetTargetFPS(60)
 
   const model = r.LoadModel('model.iqm')
-  // const anim = r.LoadModelAnimations('model.iqm', 1)
+  const anim = r.LoadModelAnimations('model.iqm', 1)
 
-  const texture = r.LoadTexture('txr_model.png')
-  r.SetMaterialTexture(model.materials[0], r.MATERIAL_MAP_DIFFUSE, texture)
+  // const texture = r.LoadTexture('txr_model.png')
+  // r.SetMaterialTexture(model.materials[0], r.MATERIAL_MAP_DIFFUSE, texture)
 
   const camera = {}
   camera.position = { x: 10.0, y: 10.0, z: 10.0 }
