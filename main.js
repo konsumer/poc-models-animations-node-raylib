@@ -1,5 +1,4 @@
 const r = require('raylib');
-const fs = require('fs');
 
 function main()
 {
@@ -21,10 +20,10 @@ function main()
 
     while (!r.WindowShouldClose()) 
     {
-        r.UpdateCamera(data.scene.camera);
+        r.UpdateCamera(camera);
 	r.BeginDrawing();
         r.DrawText("Congrats! You created your first node-raylib window!", 120, 200, 20, r.LIGHTGRAY);
-        r.BeginMode3D(data.scene.camera);
+        r.BeginMode3D(camera);
 	r.ClearBackground(r.RAYWHITE);
         r.EndMode3D(camera);
 	r.EndDrawing();
