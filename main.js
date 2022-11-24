@@ -8,7 +8,7 @@ function main()
     r.SetTargetFPS(60);
 	
     var model = r.LoadModel("guy.iqm");
-    var anim = r.LoadModelAnimations("guy.iqm",0);
+    //var anim = r.LoadModelAnimations("guy.iqm",0);
 
     var camera = {};
     camera.position = {x:10.0, y:10.0, z:10.0};
@@ -22,11 +22,11 @@ function main()
     {
         r.UpdateCamera(camera);
 	r.BeginDrawing();
-        r.DrawText("Congrats! You created your first node-raylib window!", 120, 200, 20, r.LIGHTGRAY);
         r.BeginMode3D(camera);
 	r.ClearBackground(r.RAYWHITE);
         r.EndMode3D(camera);
-	r.EndDrawing();
+        r.DrawText("Congrats! You created your first node-raylib window!", 120, 200, 20, r.LIGHTGRAY);
+        r.EndDrawing();
     }
     r.CloseWindow();
 }
