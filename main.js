@@ -7,8 +7,11 @@ function main () {
   r.SetTargetFPS(60)
 
   const model = r.LoadModel('model.iqm')
-  const anim = r.LoadModelAnimations('model.iqm', 1)
 
+  // this segfaults
+  // const anim = r.LoadModelAnimations('model.iqm', 1)
+
+  // TypeError: r.SetMaterialTexture is not a function
   // const texture = r.LoadTexture('txr_model.png')
   // r.SetMaterialTexture(model.materials[0], r.MATERIAL_MAP_DIFFUSE, texture)
 
